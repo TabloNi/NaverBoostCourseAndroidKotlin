@@ -6,6 +6,7 @@
             android:layout_height="match_parent"
             android:background="#EEEEEE"
             tools:context=".MainActivity">
+
     <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
@@ -15,6 +16,7 @@
                 android:background="@drawable/gradient"
                 android:layout_width="match_parent"
                 android:layout_height="230dp">
+
             <ImageView
                     android:layout_marginLeft="8dp"
                     android:id="@+id/iv_main_movie_image"
@@ -22,8 +24,11 @@
                     android:layout_alignParentLeft="true"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/image11" android:contentDescription="TODO" android:layout_marginStart="8dp"
+                    android:src="@drawable/image11"
+                    android:contentDescription="TODO"
+                    android:layout_marginStart="8dp"
                     android:layout_alignParentStart="true"/>
+
             <TextView
                     android:id="@+id/tv_main_movie_name"
                     android:textSize="22sp"
@@ -35,7 +40,8 @@
                     android:text="군도"
                     android:layout_marginLeft="16dp"
                     android:textColor="#ffffff"
-                    android:layout_toEndOf="@+id/iv_main_movie_image" android:layout_marginStart="16dp"/>
+                    android:layout_toEndOf="@+id/iv_main_movie_image"
+                    android:layout_marginStart="16dp"/>
 
             <ImageView
                     android:layout_width="wrap_content"
@@ -55,6 +61,7 @@
                     android:layout_height="wrap_content"
                     android:layout_toRightOf="@+id/tv_main_date"
                     android:text="개봉"/>
+
             <TextView
                     android:id="@+id/tv_main_date"
                     android:textSize="15sp"
@@ -66,6 +73,7 @@
                     android:layout_toRightOf="@+id/iv_main_movie_image"
                     android:layout_marginLeft="16dp"
                     android:text="2014.07.23"/>
+
             <TextView
                     android:id="@+id/tv_main_slash"
                     android:textSize="15sp"
@@ -76,6 +84,7 @@
                     android:layout_toRightOf="@+id/tv_main_genre"
                     android:layout_marginLeft="4dp"
                     android:text="/"/>
+
             <TextView
                     android:id="@+id/tv_main_time"
                     android:textSize="15sp"
@@ -86,6 +95,7 @@
                     android:layout_toRightOf="@+id/tv_main_slash"
                     android:layout_marginLeft="4dp"
                     android:text="137"/>
+
             <TextView
                     android:textSize="15sp"
                     android:layout_below="@+id/tv_main_date"
@@ -95,6 +105,7 @@
                     android:layout_toRightOf="@+id/tv_main_time"
                     android:layout_marginLeft="4dp"
                     android:text="분"/>
+
             <TextView
                     android:id="@+id/tv_main_genre"
                     android:textSize="15sp"
@@ -105,6 +116,7 @@
                     android:layout_toRightOf="@+id/iv_main_movie_image"
                     android:layout_marginLeft="16dp"
                     android:text="액션"/>
+
             <TextView
                     android:layout_marginLeft="4dp"
                     android:layout_marginTop="37dp"
@@ -118,6 +130,7 @@
                     android:layout_height="wrap_content"
                     android:layout_toRightOf="@+id/iv_thumb_up"
                     android:text="15"/>
+
             <TextView
                     android:layout_marginLeft="4dp"
                     android:layout_marginTop="37dp"
@@ -131,6 +144,7 @@
                     android:layout_height="wrap_content"
                     android:layout_toRightOf="@+id/iv_thumb_down"
                     android:text="1"/>
+
             <ImageView
                     android:layout_marginTop="35dp"
                     android:src="@drawable/ic_thumb_down"
@@ -141,6 +155,7 @@
                     android:layout_height="wrap_content"
                     android:layout_toRightOf="@+id/tv_thumb_up_number"
                     android:layout_marginLeft="16dp"/>
+
             <ImageView
                     android:layout_marginTop="35dp"
                     android:src="@drawable/ic_thumb_up"
@@ -152,15 +167,18 @@
                     android:layout_toRightOf="@+id/iv_main_movie_image"
                     android:layout_marginLeft="16dp"/>
         </RelativeLayout>
+
         <LinearLayout
                 android:background="#ffffff"
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="90dp">
+
             <RelativeLayout
                     android:layout_weight="1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
+
                 <TextView
                         android:textSize="18sp"
                         android:layout_marginTop="20dp"
@@ -171,6 +189,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="예매율"/>
+
                 <TextView
                         android:layout_marginLeft="40dp"
                         android:layout_alignParentLeft="true"
@@ -182,6 +201,7 @@
                         android:layout_height="wrap_content"
                         android:textColor="#757575"
                         android:text="5위"/>
+
                 <TextView
                         android:layout_marginLeft="4dp"
                         android:id="@+id/tv_main_rate_persent"
@@ -194,15 +214,18 @@
                         android:textColor="#757575"
                         android:text="1.8%"/>
             </RelativeLayout>
+
             <View
                     android:layout_width="2dp"
                     android:layout_height="match_parent"
                     android:background="#D8D8D8"
-            />
+                    />
+
             <RelativeLayout
                     android:layout_weight="1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
+
                 <TextView
                         android:textSize="18sp"
                         android:layout_marginTop="20dp"
@@ -213,6 +236,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="평점"/>
+
                 <RatingBar
                         android:id="@+id/rb_main_rate_ratingbar"
                         android:layout_width="wrap_content"
@@ -228,6 +252,7 @@
                         app:layout_constraintLeft_toLeftOf="parent"
                         app:layout_constraintRight_toRightOf="parent"
                         app:layout_constraintTop_toTopOf="parent"/>
+
                 <TextView
                         android:id="@+id/tv_main_bar_number"
                         android:layout_width="wrap_content"
@@ -240,15 +265,18 @@
                         android:layout_toRightOf="@+id/rb_main_rate_ratingbar"
                         android:layout_below="@+id/tv_main_rating"/>
             </RelativeLayout>
+
             <View
                     android:layout_width="2dp"
                     android:layout_height="match_parent"
                     android:background="#D8D8D8"
-            />
+                    />
+
             <RelativeLayout
                     android:layout_weight="1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
+
                 <TextView
                         android:textSize="18sp"
                         android:layout_marginTop="20dp"
@@ -259,6 +287,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="누적관객수"/>
+
                 <TextView
                         android:layout_marginLeft="40dp"
                         android:layout_centerHorizontal="true"
@@ -272,6 +301,7 @@
                         android:text="839,399명"/>
             </RelativeLayout>
         </LinearLayout>
+
         <LinearLayout
                 android:paddingHorizontal="16dp"
                 android:paddingVertical="8dp"
@@ -280,6 +310,7 @@
                 android:background="#ffffff"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
+
             <TextView
                     android:layout_marginTop="8dp"
                     android:layout_marginLeft="8dp"
@@ -289,6 +320,7 @@
                     android:text="줄거리"
                     android:textStyle="bold"
                     android:textColor="#111111"/>
+
             <TextView
                     android:id="@+id/tv_main_story"
                     android:layout_marginTop="8dp"
@@ -296,8 +328,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/story"
-            />
+                    />
         </LinearLayout>
+
         <LinearLayout
                 android:paddingVertical="8dp"
                 android:layout_marginTop="12dp"
@@ -305,6 +338,7 @@
                 android:background="#ffffff"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
+
             <TextView
                     android:layout_marginTop="8dp"
                     android:layout_marginLeft="8dp"
@@ -314,10 +348,12 @@
                     android:text="감독/출연"
                     android:textStyle="bold"
                     android:textColor="#111111"/>
+
             <LinearLayout
                     android:orientation="horizontal"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
+
                 <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -326,6 +362,7 @@
                         android:layout_marginTop="8dp"
                         android:layout_marginLeft="8dp"
                         android:text="감독"/>
+
                 <TextView
                         android:id="@+id/tv_name_director"
                         android:layout_width="wrap_content"
@@ -335,10 +372,12 @@
                         android:layout_marginLeft="8dp"
                         android:text="윤종빈"/>
             </LinearLayout>
+
             <LinearLayout
                     android:orientation="horizontal"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
+
                 <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -347,6 +386,7 @@
                         android:layout_marginTop="8dp"
                         android:layout_marginLeft="8dp"
                         android:text="출연"/>
+
                 <TextView
                         android:id="@+id/tv_name_actor"
                         android:layout_width="wrap_content"
@@ -355,6 +395,7 @@
                         android:layout_marginTop="8dp"
                         android:layout_marginLeft="8dp"
                         android:text="하정윤(도치)"/>
+
                 <TextView
                         android:id="@+id/tv_name_other_actor"
                         android:layout_width="wrap_content"
@@ -364,12 +405,14 @@
                         android:text=", 강동원(조윤)"/>
             </LinearLayout>
         </LinearLayout>
+
         <RelativeLayout
                 android:paddingVertical="8dp"
                 android:layout_marginTop="12dp"
                 android:background="#ffffff"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
+
             <TextView
                     android:layout_marginTop="8dp"
                     android:layout_marginLeft="8dp"
@@ -379,6 +422,7 @@
                     android:text="한줄평"
                     android:textStyle="bold"
                     android:textColor="#111111"/>
+
             <TextView
                     android:id="@+id/tv_main_review_write"
                     android:layout_marginTop="8dp"
@@ -390,6 +434,7 @@
                     android:text="작성하기"
                     android:textStyle="bold"
                     android:textColor="#E44418"/>
+
             <ImageView
                     android:layout_marginRight="4dp"
                     android:layout_marginTop="8dp"
@@ -397,22 +442,32 @@
                     android:layout_width="25dp"
                     android:layout_height="25dp"
                     android:layout_toLeftOf="@+id/tv_main_review_write"/>
+
             <RelativeLayout
                     android:layout_below="@+id/tv_main_review_write"
                     android:layout_width="match_parent"
-                    android:layout_height="200dp">
+                    android:layout_height="300dp">
+
+                <ListView
+                        android:layout_width="match_parent"
+                        android:id="@+id/CommentListView"
+                        android:layout_height="250dp">
+                </ListView>
             </RelativeLayout>
+
             <TextView
                     android:background="@drawable/main_all_view"
                     android:layout_marginHorizontal="8dp"
                     android:gravity="center"
                     android:text="모두 보기"
                     android:textSize="18sp"
+                    android:id="@+id/tv_view_all_comment"
                     android:textColor="#6A2C97"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:layout_alignParentBottom="true"/>
         </RelativeLayout>
+
         <LinearLayout
                 android:paddingVertical="16dp"
                 android:layout_marginTop="12dp"
@@ -421,12 +476,14 @@
                 android:background="#ffffff"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
+
             <ImageView
                     android:id="@+id/iv_main_facebook"
                     android:layout_marginLeft="16dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/ic_facebook"/>
+
             <ImageView
                     android:id="@+id/iv_main_kakaotalk"
                     android:layout_marginLeft="8dp"

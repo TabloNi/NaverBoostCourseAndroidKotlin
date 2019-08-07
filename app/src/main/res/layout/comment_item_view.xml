@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_profile"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/user1"
+            app:civ_border_color="#FFCCCCCC"
+            app:civ_border_width="2dp"
+            android:layout_alignParentStart="true"/>
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/iv_profile"
+            android:orientation="vertical"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@id/iv_profile">
+
+        <TextView
+                android:id="@+id/tv_listreview_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="tabloni0719"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:textStyle="bold"/>
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:id="@+id/tv_listreview_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10분전"
+                    android:textSize="13sp"/>
+
+            <RatingBar
+                    android:id="@+id/ratingbar_listreview"
+                    style="@style/Base.Widget.AppCompat.RatingBar.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:isIndicator="true"
+                    android:max="10"
+                    android:numStars="5"
+                    android:rating="5"
+                    android:stepSize="0.1"
+                    android:layout_marginStart="10dp"/>
+
+        </LinearLayout>
+
+        <TextView
+                android:id="@+id/tv_listreview_contents"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="적당히 재밌다. 오랜만에 잠 안오는 영화를 봤네요."
+                android:textColor="#000000"/>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:id="@+id/tv_listreview_recommend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="추천 0"
+                    android:textColor="#000000"
+                    android:textSize="12sp"/>
+
+            <View
+                    android:layout_width="2dp"
+                    android:layout_height="10dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#cccccc"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="신고하기"
+                    android:textSize="12sp"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

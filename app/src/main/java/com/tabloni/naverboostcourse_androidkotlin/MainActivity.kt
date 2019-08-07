@@ -13,6 +13,53 @@ class MainActivity : AppCompatActivity() {
     private var likeState = false
     private var hateState = false
 
+    private val userId = arrayOf(
+        "TabloNi1",
+        "TabloNi2",
+        "TabloNi3",
+        "TabloNi4",
+        "TabloNi5",
+        "TabloNi6"
+
+    )
+
+
+    private val userTime = arrayOf(
+        "10분전",
+        "20분전",
+        "30분전",
+        "45분전",
+        "55분전",
+        "25분전"
+    )
+
+    private val userContents = arrayOf(
+        "재미있어욝1",
+        "재미있어욝2",
+        "재미있어욝3",
+        "재미있어욝4",
+        "재미있어욝5",
+        "재미있어욝6"
+    )
+
+    private val userRecommend = arrayOf(
+        "추천 10",
+        "추천 50",
+        "추천 24",
+        "추천 19",
+        "추천 65",
+        "추천 12"
+    )
+
+    private val userProfile = arrayOf(
+        R.drawable.ic_12,
+        R.drawable.ic_15,
+        R.drawable.ic_19,
+        R.drawable.ic_facebook,
+        R.drawable.ic_kakao,
+        R.drawable.user1
+    )
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -60,7 +107,6 @@ class MainActivity : AppCompatActivity() {
 
         }
 
-
         iv_thumb_up.setOnClickListener {
             if (likeState && hateState) {
                 toast("err!")
@@ -96,6 +142,10 @@ class MainActivity : AppCompatActivity() {
 
         }
 
+        val CustomListAdapter = CommentItemListAdapter(this, userId, userTime, userContents, userRecommend, userProfile)
+        CommentListView.adapter = CustomListAdapter
+
     }
+
 
 }
