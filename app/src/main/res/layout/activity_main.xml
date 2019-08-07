@@ -433,7 +433,9 @@
                     android:layout_height="wrap_content"
                     android:text="작성하기"
                     android:textStyle="bold"
-                    android:textColor="#E44418"/>
+                    android:textColor="#E44418"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="8dp"/>
 
             <ImageView
                     android:layout_marginRight="4dp"
@@ -451,6 +453,7 @@
                 <ListView
                         android:layout_width="match_parent"
                         android:id="@+id/CommentListView"
+                        android:smoothScrollbar="true"
                         android:layout_height="250dp">
                 </ListView>
             </RelativeLayout>
